@@ -1,0 +1,200 @@
+/* Untuk Smartphone*/
+@media screen and (max-width: 670px) {
+  /*Header*/
+  .header-logo {
+    float: none;
+    width: 100%;
+    margin: 0 85px;
+  }
+
+  .header-right {
+    float: none;
+    display: block;
+    padding: 0 5px;
+  }
+
+  .header-right li {
+    line-height: initial;
+    margin-bottom: 5px;
+    padding: 0 10px;
+  }
+
+  .header-right a {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: rgb(232, 240, 118);
+  }
+
+  /*Section-1*/  
+  .section-1 {
+    left: 0%;
+  }
+
+  .section-1 p {
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .section-1 h1 {
+    text-align: center;
+  }
+
+  button {
+    width: 50%;
+    margin: 15px 0;
+    transform: translateX(50%);
+  }
+
+  /* section-2 */
+  .heading {
+    font-size: 10px;
+    text-align: left;
+  }
+
+  .heading h2 {
+    color: white;
+  }
+
+  .lesson {
+    width: 100%;
+  }
+
+  /* section-3 */
+  .review-google {
+    height: auto;
+  }
+
+  .card-review {
+    width: 100%;
+  }
+
+  /* footer */
+  .f-left-container {
+    flex: none;
+    width: 100%;
+  }
+
+  .f-right-container {
+    flex: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .footer1-links {
+    flex-wrap: wrap-reverse;
+    padding-left: 0px;
+    padding-bottom: 0px;
+  }
+
+  .footer2-links {
+    flex: none;
+    width: 100%;
+    padding-top: 0px;
+  }
+
+  .link-title {
+    width: 100%;
+  }
+
+  .link2-title {
+    width: 100%;
+  }
+
+  .footer3-links {
+    width: 100%;
+    flex: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  /* section-2 */
+  .lesson-wrapper {
+    height: auto;
+    padding-bottom: 20px;
+    background-color: #29568f;
+  }
+
+  .heading {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 30px;
+  }
+
+  .heading h2 {
+    color: white;
+    text-align: center;
+  }
+
+  /* .lesson {
+    float: none;
+    width: 25%;
+  }
+  .lesson-icon {
+    position: relative;
+  } */
+
+  .img-main {
+    width: 100px;
+    height: 100px;
+  }
+
+  .img-main:hover {
+    width: 110px;
+    height: 110px;
+    transition: 0.8s;
+    cursor: pointer;
+  }
+
+  .img-main-2 {
+    width: 160px;
+    height: 100px;
+  }
+
+  .img-main-2:hover {
+    width: 110px;
+    height: 110px;
+    transition: 0.8s;
+    cursor: pointer;
+  }
+
+  /* section-2 */
+  .lesson {
+    width: 100%;
+  }
+
+  /* section-3 */
+  .review-google {
+    height: auto;
+  }
+
+  .card-review {
+    width: 50%;
+  }
+
+  /* footer */
+  footer {
+    display: block;
+    text-align: center;
+  }
+  
+  .f-left-container {
+    display: block;
+  }
+  
+  .footer1-links {
+    display: block;
+  }
+  
+  .footer2-links {
+    display: block;
+  }
+  
+  .f-right-container {
+    display: block;
+  }
+
+  textarea {
+    width: 50%;
+    height: 50%;
+  }
+}

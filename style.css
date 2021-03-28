@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "open sans", Arial, Helvetica, sans-serif, "lucida grande";
+  margin: 0;
+  padding: 0;
+  background-image: radial-gradient(rgb(128, 123, 172), rgb(185, 131, 131));
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  background-image: linear-gradient(rgb(3, 17, 145),rgb(11, 85, 170));
+  position: fixed;
+  top: 0;
+  z-index: 666;
+  margin: 0;
+  text-shadow: rgb(245, 241, 241) 0 1px 1px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+p::first-letter {
+  color: inherit;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.header-logo {
+  float: left;
+  text-decoration: none;
+}
+
+.header-logo h1 {
+  color: rgb(233, 232, 232);
+  padding: 17px 0px;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+  display: inline;
+  padding: 5px;
+}
+
+.header-right li {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  list-style-type: none;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a {
+  font: 20px helvetica;
+  color: white;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  font-weight: bold;
+  color: #07f787;
+}
+
+/*Section-1*/
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), #29568f), url(./img/background-2.jpg);
+  background-size: cover;
+  background-position: center;
+  /*position: fixed;*/
+}
+
+button {
+  width: 120px;
+  color: #fbfcfd;
+  margin: 0 10px;
+  padding: 12px 0px;
+  text-decoration: none;
+  background: transparent;
+  border: 0.5px solid #fff;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  transition: color 0.5s;
+}
+
+button span {
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+button:hover span {
+  width: 100%;
+}
+
+button:hover {
+  color: #000;
+}
+.section-1 {
+  color: #fbfcfd;
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.section-1 h1 {
+  color: #feabb0;
+  font-size: 80px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  line-height: 80px;
+  opacity: 0.7;
+}
+
+/*section2*/
+.lesson-wrapper {
+  height: 500px;
+  padding-bottom: 80px;
+  background-color: #29568f;
+  text-align: center;
+}
+
+.section-2 {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.heading {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: white;
+  font-size: 20px;
+}
+
+.heading h2 {
+  font-family: lucida;
+}
+
+.lessons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.lesson {
+  flex: auto;
+  width: 33%;
+  margin-bottom: 25px;
+}
+
+.lesson-icon {
+  position: relative;
+}
+
+.img-main {
+  width: 200px;
+  height: 200px;
+}
+
+.img-main-2 {
+  width: 320px;
+  height: 200px;
+}
+
+.img-main:hover {
+  width: 210px;
+  height: 210px;
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+.lesson-icon p {
+  color: white;
+  font-weight: bold;
+  font-family: lucida;
+}
+
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 15px;
+  font-family: lucida;
+  color: #b3aeb5;
+}
+
+/* section-03 */
+.review-google {
+  margin-top: 50px;
+  height: 400px;
+}
+
+.rev-container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.rev-container h1 {
+  color: black;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-review {
+  transition: 0.8s;
+  width: 20%;
+  flex: auto;
+  margin: 0 auto;
+}
+
+.card-konten {
+  transition: 0.6s;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 10px 0;
+  border: 1px solid white;
+  color: black;
+  border-radius: 10px;
+  animation-name: open-card;
+  animation-duration: 4s;
+  background-color: rgb(251, 252, 231);
+}
+
+@keyframes open-card {
+  from {
+    color: black;
+  }
+
+  to {
+    color: black;
+  }
+}
+
+.card-konten:hover {
+  box-shadow: 2px 5px 10px rgb(33, 33, 33);
+}
+
+.card-review h4 {
+  font-weight: normal;
+  padding: 0 10px;
+  font-size: 16px;
+  color: rgb(6, 6, 78);
+}
+
+.pic-review img {
+  margin: 0 auto;
+  height: 50px;
+  width: 100%;
+}
+
+.name-review {
+  text-align: center;
+}
+
+.name-review h5 {
+  font-weight: bold;
+  font-size: 16px;
+  color: rgb(13, 61, 45);
+}
+
+/* huruf awal Web Developer, yakni 'W'. Supaya tidak norak, saya kembalikan ke style normal */
+.name-review p::first-letter {
+  font-size: inherit;
+  font-weight: normal;
+}
+
+.tombol {
+  text-align: center;
+}
+
+.btn {
+  margin-top: 20px;
+  transition: 0.5s;
+  padding: 12px 24px;
+  color: black;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+  background-color: cornflowerblue;
+}
+
+.btn:hover {
+  background-color: grey;
+}
+
+/* footer */
+
+footer {
+  background-image: linear-gradient(rgb(189, 192, 196),rgb(148, 137, 197));
+  display: flex;
+}
+
+.f-left-container {
+  flex-basis: 70%;
+  display: flex;
+  margin-right: 50px;
+}
+
+.footer1-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 20px 0px 20px 20px;
+}
+
+.footer2-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 20px 0px;
+}
+
+.f-right-container {
+  flex-basis: 40%;
+  display: flex;
+  margin: 20px;
+}
+
+.link-title {
+  padding: 10px;
+  flex: auto;
+  width: 25%;
+}
+
+.link2-title {
+  padding: 10px;
+  flex: auto;
+  width: 300px;
+}
+
+.link-title li {
+  list-style-type: none;
+  padding-bottom: 5px;
+}
+
+.small-edit {
+  padding-bottom: 10px;
+}
+
+.link-title h4 {
+  padding-bottom: 10px;
+}
+
+.link2-title h4 {
+  padding-bottom: 10px;
+}
+
+.link-title a {
+  color:#000;
+}
+
+textarea {
+  width: 100%;
+  height: 50%;
+}
+

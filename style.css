@@ -194,6 +194,13 @@ button:hover {
   cursor: pointer;
 }
 
+.img-main-2:hover {
+  width: 330px;
+  height: 210px;
+  transition: 0.8s;
+  cursor: pointer;
+}
+
 .lesson-icon p {
   color: white;
   font-weight: bold;

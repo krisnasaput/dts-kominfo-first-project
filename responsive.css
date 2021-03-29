@@ -28,6 +28,8 @@
   /*Section-1*/  
   .section-1 {
     left: 0%;
+/*     judul section 1 juga tertutupi dengan header, jadi kita tambah saja position: relative; */
+    position: relative;
   }
 
   .section-1 p {

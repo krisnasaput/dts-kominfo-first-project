@@ -20,7 +20,8 @@
   .header-right li {
     line-height: initial;
     margin-bottom: 5px;
-    padding: 0px 20px 0px 0px;
+    margin-right: 20px;
+    padding: 0px 50px 0px 0px;
   }
 
   .header-right a {

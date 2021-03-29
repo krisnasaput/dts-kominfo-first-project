@@ -28,6 +28,7 @@
   /*Section-1*/  
   .section-1 {
     left: 0%;
+    position: relative;
   }
 
   .section-1 p {

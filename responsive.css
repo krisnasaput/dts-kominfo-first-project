@@ -4,9 +4,12 @@
   .header-logo {
     float: none;
     width: 100%;
-    margin: 0;
   }
-
+  
+  .header-logo h1 {
+    text-align: center;
+  }
+  
   .header-right {
     float: none;
     display: block;
